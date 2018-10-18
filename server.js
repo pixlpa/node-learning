@@ -54,5 +54,11 @@ app.get('/bad',(req, res)=>{
         code: 'Don\'t even try it',
         explanation: 'really bad idea'
     })
-})
+});
+
+app.get('/projects',(req, res)=>{
+    res.render('projects.hbs',{
+        pageTitle: 'Projects Page'
+    })
+});
 app.listen(port);
